@@ -1,0 +1,206 @@
+.t-wrapper{
+    padding:  0 3rem 0 3rem;;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10rem;
+    flex-direction: column;
+    gap: 2rem;
+    position: relative;
+}
+.t-heading{
+    align-self: start;
+    margin-left: 5rem;
+}
+.t-heading>*{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.t-heading span:nth-of-type(2){
+    color: var(--orange);
+}
+
+.t-blur1{
+    left: 38rem;
+    top: 16rem;
+}
+.t-blur2{
+    top: 9rem;
+    left: 0;
+}
+.testimonial{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2rem;
+    width: 30rem;
+    height: 12rem;
+    /* styles same as work.css */
+    background: rgba(255, 255, 255, 0.26);
+    border: 7px solid var(--blueCard);
+    box-shadow: var(--boxShadow);
+    border-radius: 20px;cursor: pointer;
+}
+.testimonial>img{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 100%;
+}
+.testimonial>span{
+    color: var(--gray);
+}
+
+
+/* slider */
+.t-wrapper .swiper {
+    width: 100%;
+    height: 70%;
+}
+
+.t-wrapper .swiper-slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.t-wrapper .swiper-pagination-bullet-active{
+    background: var(--orange);
+}
+
+
+.client{
+    background: rgba(255, 255, 255, 0.26);
+    padding: 20px 1px 5px;
+    border: 5px solid var(--blueCard);
+    box-shadow: var(--boxShadow);
+    border-radius: 20px;
+    min-height: 270px; 
+    width: 730px;
+    margin-top: 60rem;
+    position: absolute;
+}
+.textline{
+    margin-top: 5rem;
+    margin-left: 4rem;
+    text-align: center;
+    /* margin-bottom: 5rem; */
+    font-size: 25px;
+    line-height: 26px;
+    padding: 1px 100px 100px;
+ 
+}
+/* ...................................Intor Design............................ */
+.sqaure{
+    position: absolute;
+    margin-top: 60rem;
+    margin-right: 27rem;
+}
+
+.t1{
+    position: absolute;
+    margin-top: 28rem;
+    margin-left: 57rem;
+}
+.t2{
+    position: absolute;
+    margin-top: 47.5rem;
+    margin-left: 33rem;
+}
+.t3{
+    position: absolute;
+    margin-top: 50rem;
+    margin-right: 50rem;
+}
+.t4{
+    position: absolute;
+    margin-top: 100rem;
+    margin-right: 57rem;
+}
+.t5{
+    position: absolute;
+    margin-top: 92rem;
+    margin-left: 31rem;
+}
+.t6{
+    position: absolute;
+    margin-top: 75rem;
+    margin-left: 57rem;
+}
+
+
+
+@media screen and (max-width: 980px){
+    .t-wrapper{
+        padding: 0;
+        margin-left: -1rem;
+    }
+    .testimonial>img{
+        width: 60px;
+        height: 60px;
+    }
+    .testimonial{
+        width: 10rem;
+        height: 10rem;
+    }
+    .t-blur1{
+        margin-left: -43rem;
+        margin-top: 10rem;
+    }
+    .t-blur2{
+        margin-left: -10rem;
+        margin-top: -5rem;
+    }
+    .sqaure{
+        margin-top: 101rem;
+        margin-left: -7rem;
+    }
+    .client{
+       
+        border: none;
+        background: none;
+        min-height: 200px;
+        width: 300px;
+       
+    }
+    .textline{
+        font-size: 10px;
+        line-height: 12px;
+        margin-left: -5rem;
+        margin-top: 2rem;
+    }
+    .sqaure{
+        margin-right: -18rem;
+        margin-top: 58rem;
+        min-height: 5px;
+    }
+    .t1{
+        margin-top: 30rem;
+        margin-left: -15rem;
+    }
+    .t2{
+        margin-top: 54rem;
+        margin-left: -15.5rem;
+    }
+    .t3{
+        display: none;
+    }
+    
+    .t4{
+        display: none;
+    }
+    .t5{
+        display: none;
+        
+    }
+    .t6{
+        margin-left: -15rem;
+        margin-top: -35rem;
+    }
+    .t-wrapper .swiper{
+        width: 95%;
+    }
+
+  }
+

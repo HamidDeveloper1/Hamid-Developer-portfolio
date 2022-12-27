@@ -1,0 +1,225 @@
+:root
+{
+    --yellow: #F5C32C;
+    --orange : #FCA61F;
+    --black : #242D49;
+    --gray : #788097;
+    --blueCard : #DDF8FE;
+    --purple: rgb(238 210 255);
+    --boxShadow : 0px 19px 60px rgb(0 0 0 / 8%);
+    --orangeCard: rgba(252, 166, 31, 0.45);
+    --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+    --hue-1:257;
+    --hue-2:47;
+    --bg-color: hsl(var(--hue-1), 100%, 97%);
+    --main-color-1: hsl(var(--hue-1), 100%, 60%);
+    --main-color-dark-1: hsl(var(--hue-1), 69%, 50%);
+    --main-color-2: hsl(var(--hue-2), 100%, 61%);
+    --main-color-dark-2: hsl(var(--hue-2), 82%, 55%);
+    --bg-color-1: hsl(var(--hue-1), 100%, 97%);
+    --bg-color-2: #fff;
+    --bg-color-3: hsl(var(--hue-1), 100%, 98%);
+    --bg-color-transparent: rgba(255, 255, 255, 0.6);
+    --heading-color: hsl(var(--hue-1), 61%, 24%);
+    --text-color: hsl(var(--hue-1), 17%, 63%);
+    --section-padding: 7erm;
+}
+
+
+.App{
+    padding: 0.5rem 3.5rem;
+    overflow: hidden;
+    color: var(--black);    
+}
+
+
+@media screen and (max-width: 480px) {
+    .App{
+        padding: 0.5rem 1rem;
+    }
+
+}
+
+
+
+/* RESET RULES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+:root {
+    --white: #fff;
+    --black: #221f1f;
+    --lightpurple: #9e91f2;
+    --darkgray: #1e1f26;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  body {
+    position: relative;
+    font: 16px/1.5 sans-serif;
+    color: var(--white);
+  }
+  
+  
+  /* MAIN RULES
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .trigger-menu-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    z-index: 2;
+    background: var(--lightpurple);
+    transition: transform 0.4s;
+  }
+  
+  .page-header .trigger-menu {
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    color: var(--white);
+    letter-spacing: 0.2em;
+  }
+  
+  .page-header .trigger-menu svg {
+    fill: var(--white);
+    margin-right: 8px;
+    transition: transform 0.3s;
+  }
+  
+  .page-header .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    text-align: center;
+    padding: 15vh 0 5vh;
+    overflow: auto;
+    z-index: 1;
+    background: var(--lightpurple);
+  }
+  
+  .page-header .menu a {
+    font-size: 3rem;
+  }
+  
+  .page-header .sub-menu a {
+    font-size: 1.5rem;
+  }
+  
+  .lottie-wrapper {
+    position: fixed;
+    bottom: 50px;
+    right: 25px;
+    z-index: 1;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  .page-main section {
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+  }
+  
+  .page-main section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.25);
+  }
+  
+  
+  /* BODY CLASSES
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .menu-open {
+    overflow: hidden;
+  }
+  
+  .menu-open .trigger-menu-wrapper {
+    background: transparent;
+  }
+  
+  .menu-open .page-header .menu {
+    display: block;
+  }
+  
+  .menu-open .page-header svg {
+    transform: rotate(45deg);
+  }
+  
+  .menu-open-with-lottie .page-header .menu {
+    padding: 5vh 0;
+  }
+  
+  .scroll-down .trigger-menu-wrapper {
+    transform: translate3d(0, -100%, 0);
+  }
+  
+  .scroll-down .lottie-wrapper {
+    background: var(--darkgray);
+  }
+  
+  .scroll-up .trigger-menu-wrapper {
+    transform: none;
+  }
+  
+  .scroll-up:not(.menu-open) .trigger-menu-wrapper {
+    background: var(--lightpurple);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
+  }
+  
+  
+  /* FOOTER
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .page-footer {
+    position: fixed;
+    right: 25px;
+    bottom: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    padding: 5px;
+    border-radius: 5px;
+    background: var(--darkgray);
+  }
+  
+  .page-footer a {
+    display: flex;
+    margin-left: 4px;
+  }
+
+
+
+  
+
+  

@@ -1,0 +1,202 @@
+:root
+{
+    --yellow: #F5C32C;
+    --orange : #FCA61F;
+    --black : #242D49;
+    --gray : #788097;
+    --blueCard : #DDF8FE;
+    --purple: rgb(238 210 255);
+    --boxShadow : 0px 19px 60px rgb(0 0 0 / 8%);
+    --orangeCard: rgba(252, 166, 31, 0.45);
+    --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+    --section-padding: 7erm;
+    --hue-1:257;
+    --hue-2:47;
+    --bg-color: hsl(var(--hue-1), 100%, 97%);
+    --main-color-1: hsl(var(--hue-1), 100%, 60%);
+    --main-color-dark-1: hsl(var(--hue-1), 69%, 50%);
+    --main-color-2: hsl(var(--hue-2), 100%, 61%);
+    --main-color-dark-2: hsl(var(--hue-2), 82%, 55%);
+    --bg-color-1: hsl(var(--hue-1), 100%, 97%);
+    --bg-color-2: #fff;
+    --bg-color-3: hsl(var(--hue-1), 100%, 98%);
+    --bg-color-transparent: rgba(255, 255, 255, 0.6);
+    --heading-color: hsl(var(--hue-1), 61%, 24%);
+    --text-color: hsl(var(--hue-1), 17%, 63%);
+    --section-padding: 7erm;
+}
+
+
+.n-wrapper{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    /* margin-right: 45px; */
+    margin-left: 55px;
+}
+
+.n-left{
+    flex: 1;
+    align-items: center;
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.n-name{
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+.i-name{
+    margin-left: 4rem;
+}
+
+.n-right{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    margin-top: 1rem;
+}
+
+.n-list{
+    flex: 10;
+    font-size: 5px;
+}
+
+.n-list > ul{
+    display: flex;
+    gap: 2.5rem;
+    margin-right: 2rem;
+    cursor: pointer;
+    margin-top: 2rem;
+    /* vertical-align: top; */
+    
+}
+
+.n-list samp{
+
+
+    font-size: 14px;
+}
+.n-list > ul >li:hover {
+    cursor: pointer;
+    color: var(--orange);
+}
+
+.n-list{
+    /* display: itenline-block; */
+    opacity: 0.7;
+    transition: 0.3s;
+    
+}
+.n-left span{
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #F5C32C;
+}
+.n-left a{
+    text-decoration: none;
+    color: var(--black);
+    /* color: #000; */
+}
+.n-list a{
+    text-decoration: none;
+    color: var(--black);
+    /* color: #000; */
+}
+
+
+/*........................... Button Style........*/
+.custom-btn {
+    width: 130px;
+    height: 58px;
+    color: #fff;
+    border-radius: 7rem;
+    padding: 10px 10px;
+    /* font-family: 'Lato', sans-serif; */
+    /* font-weight: 500; */
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    5px 15px 20px 7px rgba(251, 33, 117, 0.3),
+    4px 40px 50px 0px rgba(235, 34, 34, 0.1);
+    outline: none;
+}
+.btn{
+      border: none;
+      background: rgb(251,33,117);
+      background: linear-gradient(0deg, rgba(251,33,117,1) 0%, rgba(234,76,137,1) 100%);
+      color: rgb(255, 255, 255);
+      overflow: hidden;
+
+ }
+.btn:hover {
+      text-decoration: none;
+      color: #fff;
+}
+.btn:before {
+      position: absolute;
+      content: '';
+      display: inline-block;
+      top: -180px;
+      left: 0;
+      width: 30px;
+      height: 100%;
+      background-color: #fff;
+      animation: shiny-btn1 3s ease-in-out infinite;
+}
+.btn:hover{
+    opacity: .7;
+}
+.btn:active{
+    box-shadow: 4px 4px 6px 0 rgba(233, 64, 64, 0.3),
+    -4px -4px 6px 0 rgba(12, 109, 226, 0.2), 
+      inset -4px -4px 6px 0 rgba(231, 71, 71, 0.2),
+      inset 4px 4px 6px 0 rgba(206, 57, 57, 0.5);
+}
+/* button text color */
+.b-button{
+    color:#000000;
+    margin-right: 2rem;
+    margin-top: 1rem;
+}
+
+.s-button{
+    color: #000000;
+}
+.a-button{
+    color: #000;
+    margin-left: 4rem;
+    height: auto;
+    text-align: center;
+}
+
+
+  
+@keyframes shiny-btn1 {
+      0% { -webkit-transform: scale(0) rotate(45deg); opacity: 0; }
+      80% { -webkit-transform: scale(0) rotate(45deg); opacity: 0.5; }
+      81% { -webkit-transform: scale(4) rotate(45deg); opacity: 1; }
+      100% { -webkit-transform: scale(50) rotate(45deg); opacity: 0; }
+}
+/* ......................................button style end................... */
+
+@media screen and (max-width: 980px) {
+    .n-list{
+        display: none;
+    }
+    .b-button{
+        display: none;
+    }
+    .n-left{
+        gap: 7rem;
+    }
+}

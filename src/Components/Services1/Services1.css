@@ -1,0 +1,171 @@
+.heading{
+    color: var(--heading-color);
+    font-size: 2rem;
+    margin-top: -2.5rem;
+    text-align: center;
+}
+.heading-2{
+    color: var(--heading-color);
+    font-size: 1.4rem;
+    text-align: center;
+    margin-top: -1rem;
+}
+
+.skills-box{
+    margin-top: 32rem;
+    padding: 5rem 6rem;
+    /* background: var(--bg-color); */
+    /* border: 7px solid var(--orangeCard); */
+    /* box-shadow: var(--boxShadow); */
+    /* border-radius: 20px; */
+    /* border-radius: 20px; */
+    width: 82.%;
+    height: 47rem;
+    /* position: relative; */
+}
+
+
+.Services-section{
+    display: flex;
+}
+
+.Services img{
+    width: 80%;
+    border-radius: 15px;
+    margin-top: 3rem;
+
+}
+h4.head {
+    margin-top: 1rem;
+}
+
+.text p{
+    width: 14rem;
+    font-size: -1rem;
+}
+p {
+    margin-top: -0.5rem;
+}
+
+
+
+.stats-bio{
+    /* text-align: center; */
+    margin-top: 20rem;
+    padding: 2rem 2rem;
+    /* background-color: rgb(97, 149, 202); */
+    border-radius: 20px;
+    width: 60%;
+    height: 5rem;
+    margin-left: 8rem;
+    background: rgba(255, 255, 255, 0.26);
+    border: 5px solid var(--orangeCard);
+    box-shadow: var(--boxShadow);
+    /* padding: 0px 26px 2rem 26px; */
+}
+
+.text-2{
+    width: 35rem;
+    /* height: 10rem; */
+    font-size: 1rem;
+   
+}
+
+.span{
+    width: 8.5rem;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 1px 5px 6px black;
+    padding: 2px 0rem;
+    background-color: aqua;
+    margin-left: 12rem;
+    
+
+}
+
+/* ......................Intor Design................... */
+.bucket{
+    margin-top: -26rem;
+    margin-left: 38.8rem;
+}
+.sqaure1{
+    margin-top: -17rem;
+   
+}
+
+
+
+@media screen and (max-width: 980px) {
+    .skills-box{
+        margin-left: -2rem;
+    }
+    
+    .heading{
+        margin-top: -24rem;
+        font-size: 15px;
+    }
+    .heading-2{
+        margin-top: 1rem;
+        font-size: 15px;
+    }
+    .Services1{
+    margin-top: 1rem;
+    margin-left: -1.5rem;
+    }
+    .Services2{
+        margin-top: 20rem;
+        margin-left: -14rem;
+    }
+    .Services3{
+        margin-top: 39.4rem;
+        margin-left: -14rem;
+
+    }
+    .Services4{
+        margin-top: -2.5rem;
+        margin-left: -30px;
+
+    }
+    .Services5{
+        margin-top: 16rem;
+        margin-left: -14rem;
+
+    }
+    .Services6{
+        margin-top: 35.5rem;
+        margin-left: -14rem;
+
+    }
+    .stats-bio{
+        border-radius: none;
+        margin-top: 40px;
+        margin-left: 5px;
+        box-shadow:none;
+        background: none;
+        padding: none;
+        border: none;
+        
+    }
+    .text-2{
+        margin-top: 7.5rem;
+        font-size: 10px;
+        width: 275px;
+        margin-left: -3.5rem;
+    }
+    .span{
+        margin-left: -1.5rem;
+    }
+    .bucket{
+        margin-left: -10.5rem;
+        margin-top: -13rem;
+        
+    }
+    .sqaure1{
+        margin-top: -12rem;
+        margin-left: -7rem;
+    }
+    
+    
+
+
+}

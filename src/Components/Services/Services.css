@@ -1,0 +1,114 @@
+.services {
+    padding: 0 4rem 0 5rem;
+    display: flex;
+    height: 90hv;
+    margin-bottom: 8rem;
+    margin-top: 9rem;
+    margin-bottom: 13rem;
+    margin-left: -2rem;
+    
+}
+
+
+.awesome{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /* margin-left: -2rem; */
+}
+
+.awesome > :nth-child(1){
+    color: var(--black);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.awesome > :nth-child(2){
+    color: var(--orange);
+    font-size: 2.5rem;
+    font-weight: bold;
+    
+}
+
+.awesome > :nth-child(3){
+    color: var(--gray);
+    font-size: 14px;
+    margin-top: 1rem;
+}
+
+.s-button{
+    width: 8rem;
+    height: 2.3rem;
+    margin-top: 1rem;
+}
+
+.cta {
+    margin-right: 1.5rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.cta {
+    display: inline-block;
+    padding: 0.9rem 1.75rem;
+    border-radius: 17px;
+    background-color: var(--main-color-1);
+    color: #fff;
+    font-size: 0.85rem;
+    letter-spacing: 0.4px;
+    min-width: 125px;
+    text-align: center;
+    text-transform: capitalize;
+    transition: 0.3s;
+}
+
+.cta:hover {
+    background-color: var(--main-color-dark-1);
+}
+
+.cta.secondary-cta {
+    position: relative;
+    background-color: transparent;
+    color: var(--main-color-1);
+    font-weight: 500;
+    font-size: 0.9rem;
+    letter-spacing: 0px;
+    border-bottom: 2.5px solid var(--main-color-2);
+    border-top:#fff;
+    border-left:#fff;
+    border-right:#fff;
+    border-radius: 0px;
+    padding: 0.15rem 0;
+}
+
+.cta.secondary-cta::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2.5px;
+    bottom: -2.5px;
+    left: 0;
+    background-color: var(--main-color-1);
+    transition: 0.3s ease-in-out;
+
+}
+
+.cta.secondary-cta:hover:before{
+    width: 100%;
+}
+@media screen and (max-width: 980px) {
+    .services{
+        margin-top:0;
+        flex-direction: column;
+        gap: 66rem;
+        height:  5px;
+        padding: 0;
+    }
+    .cards{
+        display: none;
+
+
+
+    }
+
+}

@@ -1,0 +1,168 @@
+.footer {
+    display: flex;
+    align-items: center;
+    /* margin: -0.5rem -3.rem; */
+    position: relative;
+    margin-top: 12rem;
+}
+  .f-content {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 4rem;
+    gap: 4rem;
+    color: white;
+}
+  .f-icons {
+    display: flex;
+    gap: 2rem;
+  }
+
+.name{
+  position: absolute;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  color: #788097;
+  margin-top: -7rem; 
+  margin-left: -30em;
+}
+.tophader{
+  position: absolute;
+  font-size: 6rem;
+  color: #ffffff;
+  margin-left: -25rem;
+  margin-top: -8rem;
+  
+ }
+.tophader1{
+  position: absolute;
+  font-size: 40px;
+  color: #788097;
+  margin-top: 13rem;
+  margin-left: -24.5rem;
+  
+ }
+
+.navhead{
+  position: absolute;
+  list-style-type: none;
+  color: #5f6d96;
+  font-size: 32px;
+  margin-left: 25rem;
+  margin-top: -15rem;
+
+}
+.nav-list1{
+  position: absolute;
+  list-style-type: none;
+  text-decoration: none;
+  color: #788097;
+  margin-left: 23rem;
+  margin-top: -12rem;
+}
+
+.footer-nav-link{
+  display: block;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-weight: 400;
+  text-decoration: none;
+}
+.small1{
+  position: absolute;
+  color: #788097;
+  margin-top: 15rem;
+  margin-left: -27rem;
+}
+.text-small22{
+  position: absolute;
+  list-style-type: none;
+  text-decoration: none;
+  color: #788097;
+  margin-top: 15rem;
+  margin-left: 25rem;
+}
+/* .topheader{
+  position: absolute;
+  color: #788097;
+  margin-left: 10rem;
+
+ 
+  
+} */
+/* .nav-list{
+  margin-left: 15rem;
+  margin-top: 5rem;
+} */
+
+/* ..........................intor Design .......................*/
+.cube1{
+  position: absolute ;
+  margin-top: -6rem;
+  margin-right: 49rem;
+
+}
+.cube2{
+  position: absolute ;
+  margin-top: 20rem;
+  margin-left: 40rem;
+
+}
+ @media screen and (max-width: 980px) {
+    .footer{
+      padding: 0;
+      margin-top: 40rem;
+    }
+    .f-content{
+      transform: scale(.5);
+    }
+   .footer a{
+     text-decoration: none;
+   }
+   .grid{
+    margin-top: -40rem;
+   }
+   .wave img{
+    height: 32rem !important;
+    /* width: 3rem; */
+   }
+   .name{
+    margin-left: -15rem !important;
+    margin-top: 30rem;
+   }
+   .tophader{
+    font-size: 3rem;
+    margin-left: -10rem;
+    margin-top: 35rem;
+   }
+   .tophader1{
+    font-size: 2rem;
+    margin-left: -9rem;
+    margin-top: 55rem;
+   }
+   .copyrights-text{
+    margin-left: 22rem;
+    margin-top: 4rem; 
+
+   }
+   .backtotop{
+    margin-left: -20rem;
+    margin-top: -15rem;
+    
+   }
+   .list{
+    margin-left: -15rem;
+    margin-top: 40rem;
+   }
+   .cube1{
+    margin-left: 28rem !important;
+    margin-top: -10rem;
+   }
+   .cube2{
+    margin-left: 14rem;
+    margin-top: 10rem;
+   }
+}
